@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="luiz guilherme">
+        <title> introdução a mim </title>
+
+        <style>
+   
+        h1 {color: white; text-align: center; padding-top: 100px;}
+        h2 {color: black;}
+        h3 {color: black;}
+        body {background-color: lightcyan;}
+        p {color: black;}
+        ol {color: black;}
+        table {color: black; background-color: aqua;}
+
+        .sidebar {
+            height: 200vh;     
+            width: 200px;         
+            position: fixed;    
+            color: black;
+            background-color:lightcyan;
+            padding-top: 20px;
+        }
+
+        .sidebar a {
+            padding: 15px;
+            text-decoration: none;
+            color: black;
+            display: block;   
+        }
+
+        .conteudo {
+            margin-left: 200px; 
+            padding: 20px;
+        }
+
+        #inicio {
+            background-color: darkblue;
+            height: 250px;
+        }
+
+
+        .links {
+            padding: 30px;
+            background-color: lightgrey;
+            margin-right: 500px;
+        }
+
+        .loginInicial {
+            color: red;
+            text-align: center;
+        }
+
+        .subtexto {
+            text-align: center;
+        }
+
+        #login {
+            background-color: lightgray;
+            height: 400px;
+            margin-right: 350px;
+            margin-left: 350px;
+        }
+
+
+
+
+    </style>
+    </head>
+    <body>
+        <nav class="sidebar">
+            <ul>
+                <li><a href="#divulgacao">Ir para divulgação</a></li>
+                <li><a href="#rotina">Ir para a rotina</a></li>
+                <li><a href="#notas">Ir para as minhas notas</a></li>
+                <li><a href="#login">Ir para o login de Kishang Empire</a></li>
+            </ul>
+        </nav>
+
+        <div id="inicio">
+            <h1>MINHA APRESENTAÇÃO</h1>
+        </div>
+
+        <div class="conteudo">
+
+
+         <h2>1 - divulgacao</h2>   
+
+        <p id="divulgacao"> olá meu nome é <b>luiz guilherme</b> e sou estudante do curso de análise e desenvolvimento de sistemas da UVV <br>
+        a seguir o link do meu perfil no github </p>
+        <ul class="links">
+            <li> <a href="https://github.com/guigokw">Acesse meu perfil e veja minha habilidades no github</a></li>
+            <li> <a href="https://www.linkedin.com/in/luiz-guilherme-carvalho-ribeiro-12032829b/">acesse meu perfil e me conheça no linkedin</a></li>
+        </ul>
+        <div>
+            <h2 id="rotina"> 2 - rotina de estudos de hoje </h2>
+            <ol>
+                <li>estudar html e revisar conteúdos das 13h até as 15h</li>
+                <li>falar com a minha avó sobre meu irmão dormir aqui e busca-lo a noite </li>
+                <li>assitir 1 episódio de invecível e 1 de the boys</li>
+                <li>buscar o dinheiro pra mim cortar o cabelo amanhâ</li>
+            </ol>
+        </div>
+
+            
+          <h2 id="notas"> 3 - Minhas notas</h2>
+
+          <h3>1 semestre</h3>
+
+          <table width="100%" border="1"
+          style="text-align: center;">
+              <tr>
+                  <th>Estrutura de computadores - 80 horas</th>
+                  <th>Fundamentos de sistemas de informação - 80 horas</th>
+                  <th>Introdução a programação de computadores - 80 horas </th>
+                  <th>Psicologia organizacional - 80 horas</th>
+              </tr>
+            
+              <tr>
+                  <td>nota: 8.80</td>
+                  <td>nota: 9.60</td>
+                  <td>nota: 9.00</td>
+                  <td>nota: 8.20</td>
+              </tr>
+           </table>
+
+    
+
+          <h3>2 semestre</h3>
+
+          <table width="100%" border="1"
+          style="text-align: center;">
+             <tr>
+              <th>Arquitetura de bancos de dados relacionais - 80 horas</th>
+              <th>Matemática para computação - 80 horas</th>
+              <th>Programação orientada a objetos - 80 horas</th>
+             </tr>
+
+             <tr>
+              <td>nota: 8.50</td>
+              <td>nota: 9.40</td>
+              <td>nota: 10.00</td>
+             </tr>
+
+          </table>
+
+          </div>
+
+          <hr>
+
+          <div id="login">
+            <form method="post" action="guigo17ribeiro@gmail.com"></form>
+
+            <h2 class="loginInicial">Olá seja bem vindo ao Khishang Empire</h2>
+
+            <p class="subtexto">Insira seus dados de login para prosseguir</p>
+
+            Nome de usuário: <input class="nome" type="text" name="nome" size="30" value="insira aqui o nome de usuário"> <br> <br>
+
+            Senha: <input class="senha" type="text" name="senha" value="insira aqui a senha">
+            <p>4-16 caracteres</p> <br>
+
+            <input type= "checkbox" name="termos"> Aceito os termos e as condições
+
+            <br>
+            <input type="submit" name="entrar" Value="ENTRAR NO JOGO">
+          </div>
+
+          <br>
+
+
+    </body>
+</html>
