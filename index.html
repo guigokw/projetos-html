@@ -87,8 +87,8 @@
             background-color: yellow;
         }
 
-        input[type="checkbox"] {
-        
+        .termos {
+            color: yellow;
         }
 
 
@@ -103,7 +103,7 @@
                 <li><a href="#divulgacao">Ir para divulgação</a></li>
                 <li><a href="#rotina">Ir para a rotina</a></li>
                 <li><a href="#notas">Ir para as minhas notas</a></li>
-                <li><a href="#login">Ir para o login de Kishang Empire</a></li>
+                <li><a href="#login">Ir para o login de Cyberhell</a></li>
             </ul>
         </nav>
 
@@ -187,11 +187,12 @@
 
              <p class="nomeUsuario">Nome de usuário:</p> <input type="text" name="nome" size="30" value="insira aqui o nome de usuário"> <br> <br>
 
-            <p class="senha">Senha:</p> <input type="password" name="senha"> 
+            <p class="senha">Senha:</p> <input type="password" name="senha" minlength="4" maxlength="16" required> 
             <p class="caracteres">4-16 caracteres</p> <br>
 
-            <input type= "checkbox" name="termos"> Aceito os termos e as condições <br>
-
+            <label for="termos" class="termos"> 
+            <input type= "checkbox" name="termos" required> Aceito os termos e as condições <br>
+            </label>
             <input type="submit" name="entrar" Value="ENTRAR NO JOGO">
             </form>
           </div>
