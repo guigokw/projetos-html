@@ -49,20 +49,48 @@
         }
 
         .loginInicial {
-            color: red;
+            color: yellow;
             text-align: center;
         }
 
         .subtexto {
             text-align: center;
+            color: yellow;
         }
 
         #login {
-            background-color: lightgray;
+            background-image: url(fundo.jpg.jpg);
+            background-size: 800px;
             height: 400px;
             margin-right: 350px;
             margin-left: 350px;
+            text-align: center;
         }
+
+        .nomeUsuario {
+            color: yellow;
+        }
+
+        .senha {
+            color: yellow
+        }
+
+        .caracteres {
+            color: yellow;
+        }
+
+        .condicoes {
+            color: yellow;
+        }
+
+        input[type="submit"] {
+            background-color: yellow;
+        }
+
+        input[type="checkbox"] {
+        
+        }
+
 
 
 
@@ -151,20 +179,19 @@
           <hr>
 
           <div id="login">
-            <form method="post" action="mailto:guigo17ribeiro@gmail.com">
+            <form method="get" action="https://github.com/guigokw">
 
-            <h2 class="loginInicial">Olá seja bem vindo ao Khishang Empire</h2>
+            <h2 class="loginInicial">CYBERHELL</h2>
 
             <p class="subtexto">Insira seus dados de login para prosseguir</p>
 
-            Nome de usuário: <input class="nome" type="text" name="nome" size="30" value="insira aqui o nome de usuário"> <br> <br>
+             <p class="nomeUsuario">Nome de usuário:</p> <input type="text" name="nome" size="30" value="insira aqui o nome de usuário"> <br> <br>
 
-            Senha: <input class="senha" type="password" name="senha" value="insira aqui a senha">
-            <p>4-16 caracteres</p> <br>
+            <p class="senha">Senha:</p> <input type="password" name="senha"> 
+            <p class="caracteres">4-16 caracteres</p> <br>
 
-            <input type= "checkbox" name="termos"> Aceito os termos e as condições
+            <input type= "checkbox" name="termos"> Aceito os termos e as condições <br>
 
-            <br>
             <input type="submit" name="entrar" Value="ENTRAR NO JOGO">
             </form>
           </div>
