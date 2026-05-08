@@ -67,12 +67,14 @@
             text-align: center;
         }
 
-        .nomeUsuario {
+        #nomeUsuario label {
             color: yellow;
+            display: block;
         }
 
-        .senha {
-            color: yellow
+        #senha label {
+            color: yellow;
+            display: block
         }
 
         .caracteres {
@@ -81,11 +83,17 @@
 
         .perguntas {
             color: yellow;
+            display: inline;
         }
 
         input[type="submit"] {
             background-color: yellow;
         }
+
+        input[type="checkbox"] {
+            color: yellow;
+        }
+
 
 
 
@@ -104,8 +112,8 @@
             </ul>
         </nav>
 
-        <div id="inicio">
-            <h1>MINHA APRESENTAÇÃO</h1>
+        <div id="inicio" onclick="Apresentacao()">
+            <h1>Clique aqui pra eu me apresentar</h1>
         </div>
 
         <div class="conteudo">
@@ -115,7 +123,7 @@
 
         <p id="divulgacao"> olá meu nome é <b>luiz guilherme</b> e sou estudante do curso de análise e desenvolvimento de sistemas da UVV <br>
         a seguir o link do meu perfil no github </p>
-        <ul class="links">
+        <ul class="links" onclick="alerta()">
             <li> <a href="https://github.com/guigokw">Acesse meu perfil e veja minha habilidades no github</a></li>
             <li> <a href="https://www.linkedin.com/in/luiz-guilherme-carvalho-ribeiro-12032829b/">acesse meu perfil e me conheça no linkedin</a></li>
         </ul>
@@ -178,28 +186,37 @@
           <div id="login">
             <form method="get" action="https://github.com/guigokw">
 
-                
-            <label for="perguntas" class="perguntas">
-
             <h2 class="loginInicial">CYBERHELL</h2>
 
             <p class="subtexto">Insira seus dados de login para prosseguir</p>
 
-             <p class="nomeUsuario">Nome de usuário:</p> <input type="text" name="nome" size="30" placeholder="insira aqui o nome de usuário"> <br> <br>
-
-            <p class="senha">Senha:</p> <input type="password" name="senha" minlength="4" maxlength="16" required placeholder="insira aqui sua senha"> 
-            <p class="caracteres">4-16 caracteres</p> <br>
-
-         
-            <input type= "checkbox" name="termos" required> Aceito os termos e as condições <br>
+            <label for="nomeUsuario"> <p class="perguntas"> Insira o seu nome de usuário</p>         
+                <input id="nomeUsuario" type="text" name="nome" size="30" placeholder="insira aqui o nome de usuário" required> <br> <br>
             </label>
 
-            <input type="submit" name="entrar" Value="ENTRAR NO JOGO">
+            <label for="senha"> <p class="perguntas"> Insira a sua senha</p>
+                <input id="senha" type="password" name="senha" minlength="4" maxlength="16" required placeholder="insira aqui sua senha"> 
+            </label>
+            <p class="caracteres">4-16 caracteres</p> 
+            
+            <input type= "checkbox" name="termos" required> <p class="perguntas">Aceito os termos e as condições</p> <br> <br>
+
+            <input type="submit" name="entrar" value="Entrar no jogo">
             </form>
           </div>
 
-          <br>
+          <script type="text/javascript">
 
+             function Apresentacao() {
+                document.getElementById('inicio').innerHTML='<h1>olá meu nome é luiz guilherme</h1>';
+             }
 
+             function alerta() {
+                alert("você sera redirecionado a outra página")
+             }
+
+          </script>
+
+        
     </body>
 </html>
