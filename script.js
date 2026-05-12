@@ -6,3 +6,5 @@
              function alerta() {
                 alert("você sera redirecionado a outra página")
              }
+
+             
